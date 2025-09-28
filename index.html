@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="weather.jpeg" alt="Weather Report" class="header-img" />
+    <h1>Weather Dashboard</h1>
+
+    <div class="input-group">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button id="getWeatherBtn">Get Weather</button>
+    </div>
+
+    <div class="unit-toggle">
+      <label>
+        <input type="checkbox" id="unitToggle" /> °F / °C
+      </label>
+    </div>
+
+    <div id="errorMsg" class="error-msg"></div>
+    <div id="weatherDisplay" class="weather-display"></div>
+    <div id="weatherTip" class="weather-tip"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
